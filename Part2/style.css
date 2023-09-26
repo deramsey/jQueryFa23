@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header, footer{
+    min-height: 10vh;
+    background-color: #ccffcc;
+    color: #116611;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+main{
+    background-color: white;
+    padding: 1.2rem;
+    width: 60vw;
+    min-height: 80vh;
+    margin: 0 auto;
+}
+
+body{
+    background-color: #eeeeaa;
+}
+
+@keyframes pulse {
+    0%{transform: scale(100%)}
+    3%{transform: scale(110%)}
+    6%{transform: scale(100%)}
+    9%{transform: scale(110%)}
+    12%{transform: scale(100%)}
+    15%{transform: scale(110%)}
+    18%{transform: scale(100%)}
+    100%{transform: scale(100%)}
+}
+
+.pulse {
+    animation: 3s pulse ease infinite; 
+}
